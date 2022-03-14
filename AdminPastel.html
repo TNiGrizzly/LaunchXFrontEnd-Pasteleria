@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+		<link rel="stylesheet" href="./css/estilosAdmin.css" />
+		<title>Administración</title>
+	</head>
+	<body>
+		<header>
+			<nav>
+				<ul>
+					<li><a href="./index.html">Inicio</a></li>
+					<li><a href="./AdminPastel.html">Administra Pasteles</a></li>
+				</ul>
+			</nav>
+		</header>
+		<!-- Ventas -->
+		<secction class="adminPas">
+			<div class="ventas-container">
+				<div class="ventas-wrapper">
+					<br /><br /><br />
+					<br />
+					<h1 class="titulo-administracion">Administración de Pasteles</h1>
+					<div class="ventas-table-container">
+						<!-- Ventas For Desktop View-->
+						<table class="ventas-table-desktop-view">
+							<!-- Table head -->
+							<thead>
+								<tr>
+									<th class="wd-10">ID</th>
+									<th class="wd-20">Cliente</th>
+									<th class="wd-10">Status</th>
+									<th class="wd-10">Precio</th>
+									<th class="wd-10">Sabores</th>
+									<th class="wd-10">Adornos</th>
+									<th class="wd-10">Cubiertas</th>
+									<th class="wd-20">Acciones</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Mirian Cosio</td>
+									<td>Enviado</td>
+									<td>$579.00</td>
+									<td>
+										<p>Fresas</p>
+										<p>Chocolate</p>
+										<p>Vainilla</p>
+									</td>
+									<td>Listones</td>
+									<td>Crema Batida</td>
+									<td>
+										<button class="ver-solicitud">Ver Solicitud</button>
+										<button class="cancelar-solicitud">Cancelar Pedido</button>
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Karl Sagan</td>
+									<td>Aprobado</td>
+									<td>$300.00</td>
+									<td>
+										<p>Chocolate</p>
+									</td>
+									<td>Listones</td>
+									<td>Duraznos</td>
+									<td>
+										<button class="ver-solicitud">Ver Solicitud</button>
+										<button class="cancelar-solicitud">Cancelar Pedido</button>
+									</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Lauren Scott</td>
+									<td>Trabajando</td>
+									<td>$270.00</td>
+									<td>
+										<p>Fresas</p>
+										<p>Vainilla</p>
+									</td>
+									<td>
+										<p>Flores</p>
+										<p>Duraznos</p>
+									</td>
+									<td>Chocolate</td>
+									<td>
+										<button class="ver-solicitud">Ver Solicitud</button>
+										<button class="cancelar-solicitud">Cancelar Pedido</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</secction>
+
+		<!-- Inventario -->
+		<secction class="inventario">
+			<div class="inventario-container">
+				<div class="inventario-wrapper">
+					<h1 class="titulo-inventario">Inventario</h1>
+					<!-- Contenedor para las tablas del inventario -->
+					<div class="inventario-tables-container">
+						<!--Inventario de la tabla de sabores -->
+						<table class="table-inventario-sabores-table-inventario">
+							<caption id="Sabores">
+								Sabores para el pastel
+							</caption>
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>Item</th>
+									<th>Cantidad</th>
+									<th>Precio</th>
+									<th>Acciones</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Vainilla</td>
+									<td>25</td>
+									<td>$180.0.0</td>
+									<td>
+										<button class="btn-editar">Editar</button>
+										<button class="btn-eliminar">Eliminar</button>
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Chocolate</td>
+									<td>45</td>
+									<td>$180.0.0</td>
+									<td>
+										<button class="btn-editar">Editar</button>
+										<button class="btn-eliminar">Eliminar</button>
+									</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Fresa</td>
+									<td>25</td>
+									<td>$180.0.0</td>
+									<td>
+										<button class="btn-editar">Editar</button>
+										<button class="btn-eliminar">Eliminar</button>
+									</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Cafe</td>
+									<td>25</td>
+									<td>$180.0.0</td>
+									<td>
+										<button class="btn-editar">Editar</button>
+										<button class="btn-eliminar">Eliminar</button>
+									</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>Coco</td>
+									<td>25</td>
+									<td>$180.0.0</td>
+									<td>
+										<button class="btn-editar">Editar</button>
+										<button class="btn-eliminar">Eliminar</button>
+									</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>Cajeta</td>
+									<td>25</td>
+									<td>$180.0.0</td>
+									<td>
+										<button class="btn-editar">Editar</button>
+										<button class="btn-eliminar">Eliminar</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<!-- Inventario de la tabla de adornos -->
+						<table class="table-inventario-adornos-table-inventario">
+							<caption id="Adornos">
+								Adornos para pastel
+							</caption>
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>Item</th>
+									<th>Cantidad</th>
+									<th>Precio</th>
+									<th>Acciones</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Flores</td>
+									<td>25</td>
+									<td>$120.0.0</td>
+									<td>
+										<button class="btn-editar">Editar</button>
+										<button class="btn-eliminar">Eliminar</button>
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Listones</td>
+									<td>45</td>
+									<td>$120.0.0</td>
+									<td>
+										<button class="btn-editar">Editar</button>
+										<button class="btn-eliminar">Eliminar</button>
+									</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Fresas</td>
+									<td>25</td>
+									<td>$100.0.0</td>
+									<td>
+										<button class="btn-editar">Editar</button>
+										<button class="btn-eliminar">Eliminar</button>
+									</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Duraznos</td>
+									<td>25</td>
+									<td>$100.0.0</td>
+									<td>
+										<button class="btn-editar">Editar</button>
+										<button class="btn-eliminar">Eliminar</button>
+									</td>
+								</tr>
+								<tr>
+									<td>5</td>
+									<td>Cerezas</td>
+									<td>25</td>
+									<td>$100.0.0</td>
+									<td>
+										<button class="btn-editar">Editar</button>
+										<button class="btn-eliminar">Eliminar</button>
+									</td>
+								</tr>
+								<tr>
+									<td>6</td>
+									<td>Nueces</td>
+									<td>25</td>
+									<td>$150.0.0</td>
+									<td>
+										<button class="btn-editar">Editar</button>
+										<button class="btn-eliminar">Eliminar</button>
+									</td>
+								</tr>
+								<tr>
+									<td>7</td>
+									<td>Almendras</td>
+									<td>25</td>
+									<td>$180.0.0</td>
+									<td>
+										<button class="btn-editar">Editar</button>
+										<button class="btn-eliminar">Eliminar</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+
+						<!-- Inventario de la tabla de Cubiertas -->
+						<table class="table-inventario-adornos-table-inventario">
+							<caption id="Cubiertas">
+								Cubiertas para pastel
+							</caption>
+							<thead>
+								<tr>
+									<th>ID</th>
+									<th>Item</th>
+									<th>Cantidad</th>
+									<th>Precio</th>
+									<th>Acciones</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>1</td>
+									<td>Chocolate</td>
+									<td>25</td>
+									<td>$180.0.0</td>
+									<td>
+										<button class="btn-editar">Editar</button>
+										<button class="btn-eliminar">Eliminar</button>
+									</td>
+								</tr>
+								<tr>
+									<td>2</td>
+									<td>Coco rayado</td>
+									<td>45</td>
+									<td>$150.0.0</td>
+									<td>
+										<button class="btn-editar">Editar</button>
+										<button class="btn-eliminar">Eliminar</button>
+									</td>
+								</tr>
+								<tr>
+									<td>3</td>
+									<td>Nuez</td>
+									<td>25</td>
+									<td>$200.0.0</td>
+									<td>
+										<button class="btn-editar">Editar</button>
+										<button class="btn-eliminar">Eliminar</button>
+									</td>
+								</tr>
+								<tr>
+									<td>4</td>
+									<td>Mermelada</td>
+									<td>25</td>
+									<td>$150.0.0</td>
+									<td>
+										<button class="btn-editar">Editar</button>
+										<button class="btn-eliminar">Eliminar</button>
+									</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</div>
+		</secction>
+	</body>
+</html>

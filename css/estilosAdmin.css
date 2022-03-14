@@ -1,0 +1,132 @@
+/*Estilos para el nav*/
+* {
+	padding: 0;
+	margin: 0;
+}
+
+header {
+	background: #bfa4a4;
+	width: 100%;
+	position: fixed;
+	z-index: 100;
+}
+
+body {
+	background: #f2c2c2;
+}
+
+nav {
+	float: right; /* Desplazamos el nav hacia la izquierda */
+}
+
+nav ul {
+	list-style: none;
+	overflow: hidden; /* Limpiamos errores de float */
+}
+
+nav ul li {
+	float: left;
+	font-family: Arial, sans-serif;
+	font-size: 16px;
+}
+
+nav ul li a {
+	display: block; /* Convertimos los elementos a en elementos bloque para manipular el padding */
+	padding: 20px;
+	color: rgb(121, 114, 114);
+	text-decoration: none;
+}
+
+nav ul li:hover {
+	background: #ffdcdc;
+}
+
+/*Estilos para botones*/
+
+.ver-solicitud,
+.cancelar-solicitud,
+.btn-editar,
+.btn-eliminar {
+	padding: 0.5rem 1.5rem;
+	outline: none;
+	border: none;
+	background-color: #d69494;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	color: var(--font-white);
+	border-radius: 10px;
+	transition: 0.3s all ease;
+	cursor: pointer;
+	text-align: center;
+	position: relative;
+}
+
+.ver-solicitud,
+.cancelar-solicitud,
+.btn-editar,
+.btn-eliminar {
+	box-shadow: 1px 2px 7px rgba(0, 0, 0, 0.5);
+	transition: 0.3s all ease;
+	border-radius: 8px;
+}
+
+/*Estilos para tablas*/
+.ventas-table-container,
+.inventario-container,
+.inventario-tables-container {
+	width: 100%;
+	max-width: 1500px;
+	margin-top: 2rem;
+}
+
+.ventas-table-container .ventas-table-desktop-view,
+.inventario-container,
+.table-inventario-sabores-table-inventario,
+.table-inventario-adornos-table-inventario {
+	width: 100%;
+	top: 50px;
+	border: 1px solid rgb(143, 34, 34);
+	border-spacing: 20px;
+	border-collapse: collapse;
+}
+
+@media (max-width: 992px) {
+	.ventas-table-container .ventas-table-desktop-view,
+	.inventario-container,
+	.inventario-tables-container {
+		display: none;
+	}
+}
+
+.titulo-inventario,
+.titulo-administracion {
+	text-align: center;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	font-size: 3rem;
+	font-weight: 100;
+	color: #811515;
+	position: relative;
+	top: 15px;
+}
+
+#Sabores,
+#Cubiertas,
+#Adornos {
+	text-align: center;
+	font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+		"Lucida Sans", Arial, sans-serif;
+	font-size: 2rem;
+	font-weight: 100;
+	color: #811515;
+	position: relative;
+}
+
+.ventas-table-desktop-view {
+	justify-content: center;
+}
+
+.ventas-table-container,
+.inventario-wrapper {
+	text-align: center;
+}
